@@ -1,0 +1,29 @@
+{
+  "name": "pi-lantern",
+  "version": "0.1.0",
+  "description": "Combined statusline and responsive sidebar for Pi.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esoterik-dev/pi-lantern.git"
+  },
+  "homepage": "https://github.com/esoterik-dev/pi-lantern#readme",
+  "keywords": ["pi-package", "pi-extension", "tui", "sidebar", "statusline"],
+  "files": [
+    "index.ts",
+    "lantern-state.ts",
+    "sidebar",
+    "zentui",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "pi": {
+    "extensions": ["./index.ts"]
+  }
+}
